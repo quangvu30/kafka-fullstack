@@ -78,9 +78,9 @@ services:
     container_name: zookeeper1
     networks:
       - kafka-platform
-    volumes:
-      - /home/itdev/dockervolumes/zookeeper/data:/var/lib/zookeeper/data
-      - /home/itdev/dockervolumes/zookeeper/logs:/var/lib/zookeeper/log
+    # volumes:
+    #   - /home/itdev/dockervolumes/zookeeper/data:/var/lib/zookeeper/data
+    #   - /home/itdev/dockervolumes/zookeeper/logs:/var/lib/zookeeper/log
 
   kafka101:
     image: confluentinc/cp-kafka:${CONFLUENT_VERSION}
