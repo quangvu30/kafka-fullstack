@@ -108,8 +108,8 @@ services:
       KAFKA_HEAP_OPTS: ${KAFKA_HEAP_OPTS}
     networks:
       - kafka-platform
-    volumes:
-      - /home/itdev/dockervolumes/kafka:/var/lib/kafka/data
+    # volumes:
+    #   - /home/itdev/dockervolumes/kafka:/var/lib/kafka/data
 
 networks:
   kafka-platform:
